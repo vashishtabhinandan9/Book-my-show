@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import DefaultHOC from "./HOC/Default.HOC";
+
+import Temp from "./components/temp";
+
+/*
+function Name1(){
+  return(
+    <h1>
+      NAME1
+    </h1>
+  )
+}
+
+
+
+function Name2(){
+  return(
+    <h1>
+      NAME2
+    </h1>
+  )
+}
+/*
+<Route path="/" exact component= {Name1} />
+    <Route path="/movie" exact component= {Name2} /> 
+
+
+    
+<DefaultHOC path="/" exact  element={<Temp/>}/>
+ */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+<DefaultHOC path="/" exact  component={Temp}/>
+</>
+    
   );
 }
 

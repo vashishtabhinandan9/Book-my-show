@@ -2,6 +2,7 @@
 
 
 import DefaultHOC from "./HOC/Default.HOC";
+import MovieHOC from "./HOC/Movie.HOC";
 
 import Temp from "./components/temp";
 
@@ -11,9 +12,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-
+//pages
 import HomePage from "./pages/Home.page";
-
+import Movie from "./pages/Movie.page";
 /*
 function Name1(){
   return(
@@ -46,6 +47,8 @@ function App() {
     <>
 
 <DefaultHOC path="/" exact  component={HomePage}/>
+<MovieHOC path="/movie/:id" exact component={Movie}/>{/**go to site rootroute/movie/123 */}
+
 </>
     
   );

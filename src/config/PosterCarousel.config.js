@@ -1,15 +1,3 @@
-import React from "react";
-import Slider from "react-slick";
-
-//component
-import Poster from "../Poster/poster.component";
-
-//images array
-import PremierImages from "../../config/PremiereImages.config";
-
-const Premier = () => {
-
-    
 const settings = {
     infinity: false,
     autoplay: false,
@@ -43,17 +31,5 @@ const settings = {
     ],
   };
 
-  return (<>
-  <div className="flex flex-col items-start py-4">
-    <h3 className="text-white text-xl font-bold">Premiere</h3>
-    <p className="text-white text-sm ">Brand new release every friday</p>
-  </div>
-    <Slider {...settings}>
-    {PremierImages.map((image)=> (
-      <Poster {...image } /> 
-    ))}
-    </Slider>
-    </>);
-};
-
-export default Premier;
+  export default settings
+  

@@ -64,7 +64,7 @@ const EntertainmentCardSlider = () => {
     return (
       <>
 
-      <div className="container mx-auto px-4">
+      
       <Slider {...settings}>
           {
            EntertainmentImage.map((image) => (
@@ -73,7 +73,7 @@ const EntertainmentCardSlider = () => {
           }
         </Slider>
 
-      </div>
+      
         
       </>
     );

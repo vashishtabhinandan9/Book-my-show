@@ -1,7 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 
-export default function PaymentModal({ isOpen, setIsOpen, price }) {
+export default function PaymentModal({setIsOpen, isOpen, price }) {
   function closeModal() {
     setIsOpen(false);
   }
@@ -100,3 +100,4 @@ export default function PaymentModal({ isOpen, setIsOpen, price }) {
     </>
   );
 }
+

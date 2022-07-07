@@ -10,7 +10,8 @@ import { MovieContext } from "../context/movie.context";
 
 const MovieLayout = (props) => {
   const { id } = useParams();{/**use params  gets the id of the moview poster we have clicked  */}
-  const { movie, setMovie } = useContext(MovieContext);//use contet is a react hook which helps us to acces moviecontext
+  const { movie, setMovie } = useContext(MovieContext);//use context is a react hook which 
+  //helps us to acces moviecontext
 
   useEffect(() => {
     const requestMovie = async () => {

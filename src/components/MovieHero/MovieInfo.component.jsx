@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 // components
 import PaymentModal from "../PaymentModal/PaymentModal.component";
 
+
 // Context
 import { MovieContext } from "../../context/movie.context";
 
@@ -29,7 +30,7 @@ const MovieInfo = () => {
 
   return (
     <>
-      <PaymentModal setIsOpen={setIsOpen} isOpen={isOpen} price={price} />
+     <PaymentModal setIsOpen={setIsOpen} isOpen={isOpen} price={price} />
       <div className="flex flex-col gap-3 lg:gap-8">
         <div className="flex items-center gap-3 md:px-4">
           <div className="w-40 h-8">

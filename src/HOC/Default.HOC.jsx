@@ -29,7 +29,6 @@ const Wrapdefaultlayout=(props)=>{
     <>
     
     <Routes>
-        
         <Route {...rest} element={ <Wrapdefaultlayout/>} />
 
      </Routes>

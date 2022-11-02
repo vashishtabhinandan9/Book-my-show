@@ -17,6 +17,7 @@ const MovieLayout = (props) => {
     const requestMovie = async () => {
       const getMovieData = await axios.get(`/movie/${id}`);//GET/movie/{movie_id}=> this gerts movie details
       setMovie(getMovieData.data);
+      window.scrollTo(0,0)
     };
     requestMovie();
   }, [id])

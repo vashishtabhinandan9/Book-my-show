@@ -13,7 +13,8 @@ import PosterCarouselSettings from "../../config/PosterCarousel.config";
 const PosterSlider = (props) => {
 
   const sliderconfig= props.config ? props.config : PosterCarouselSettings
-  {/**now some where we need 4 poster in slider somewhere we need 5 so for that we need to change the slider settinfs
+  {/**now some where we need 4 poster in slider somewhere we need 5 so for that we need to
+   change the slider settinfs
 that is what slidedconfig do if props has a configuration then apply that otherwise apply defult one (postercarousal settings)
 */}
 
